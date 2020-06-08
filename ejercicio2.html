@@ -23,10 +23,10 @@
 
 			for(var i = 2; i < cantidad; i++)
 			{
-				if(a % a == 0 && (a / 1 == a || a / a == 1))
+				if(a % a === 0 && (a / 1 === a || a / a === 1))
 					{
 						document.getElementById('pri').innerHTML = "Es Primo";
-					}else{
+					}else if(a/2){
 						document.getElementById('pri').innerHTML = "No es Primo";
 					}
 			}	

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Conversor de Temperatura</title>
+</head>
+<body>
+
+  <strong>Conversor de Temperatura</strong><br>
+
+  <br>Ingrese valor a convertir<br>
+  <input type="number" id ="cantidad" name="numero">
+  <div id="resul"></div><br>
+
+<button onclick="convertir(event)" name="Celsius-a-Fahrenheit">Convertir Fahrenheit</button>
+
+<script>
+    var C = 0;
+
+    function convertir() {
+        C = document.getElementById("cantidad").value;
+
+        F =C*9/5+32;
+        document.getElementById("resul").innerHTML = ("Fahrenheit: " + F);
+    }
+</script>
+</body>
+</html>
