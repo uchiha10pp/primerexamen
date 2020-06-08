@@ -1,0 +1,41 @@
+
+<!--========================================================================
+=            1° ejercicio Escriba un programa que pida 3 números 
+                y escriba en la pantalla el mayor de los tres.             =
+=========================================================================-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Examen</title>
+	</head>
+	<body>
+		
+		<p id="may2" onclick="mayor2()">Click here!</p>
+		
+	</body>
+	<script>		
+
+		function mayor2()
+		{
+			var arra = [];
+
+			for(var i = 0; i < 3; i++)
+			{
+				arra[i] = prompt("Ingrese", "numero");
+			}
+
+			for (var i = 0; i < 3; i++)
+			{				
+				console.log(arra[i]);
+			}
+
+			arra.sort(function(a, b){return b-a});
+			document.getElementById("may2").innerHTML = arra[0];			
+		};
+	</script>
+</html>
+
+<!--====  End of 1° ejercicio Escriba un programa que pida 3 números 
+	                y escriba en la pantalla el mayor de los tres.   ====-->
